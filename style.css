@@ -1632,3 +1632,393 @@ form.contact-form {
     font-size: 34px;
   }
 }
+/* =========================================================
+   EXPERIENCE SECTION - FINAL REDESIGN OVERRIDE
+   Paste this block at the very bottom of style.css
+========================================================= */
+
+#experience {
+  position: relative;
+}
+
+#experience .section-intro {
+  max-width: 760px;
+  margin-top: 16px;
+  color: rgba(230, 236, 245, 0.78);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Resume CTA */
+#experience .resume-strip {
+  margin: 42px 0 46px;
+  padding: 28px 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: linear-gradient(135deg, rgba(255,255,255,0.055), rgba(255,255,255,0.025));
+  border-radius: 18px;
+}
+
+#experience .resume-strip h3 {
+  margin: 0 0 8px;
+  font-size: 1.3rem;
+}
+
+#experience .resume-strip p {
+  margin: 0;
+  max-width: 520px;
+  color: rgba(230, 236, 245, 0.72);
+  line-height: 1.65;
+}
+
+/* Main showcase layout */
+#experience .xp-showcase {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.82fr) !important;
+  gap: 28px !important;
+  align-items: stretch !important;
+  margin: 40px 0 28px !important;
+}
+
+/* Featured case card */
+#experience .xp-feature-card {
+  position: relative;
+  padding: 36px !important;
+  min-height: 100%;
+  border: 1px solid rgba(132, 223, 240, 0.32);
+  background:
+    radial-gradient(circle at top right, rgba(132, 223, 240, 0.12), transparent 34%),
+    linear-gradient(145deg, rgba(255,255,255,0.07), rgba(255,255,255,0.025));
+  border-radius: 22px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.18);
+}
+
+#experience .xp-feature-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 24px;
+  width: 4px;
+  height: 86px;
+  background: var(--teal-soft, #84dff0);
+  border-radius: 0 999px 999px 0;
+}
+
+#experience .xp-label {
+  display: inline-flex;
+  margin-bottom: 16px;
+  color: var(--teal-soft, #84dff0);
+  font-family: var(--mono, monospace);
+  font-size: 0.74rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+#experience .xp-feature-card h3 {
+  margin: 0 0 12px;
+  font-size: clamp(1.6rem, 2.6vw, 2.3rem);
+  line-height: 1.18;
+}
+
+#experience .xp-org {
+  margin: 0 0 22px;
+  color: rgba(230, 236, 245, 0.7);
+  line-height: 1.6;
+}
+
+#experience .xp-feature-card p {
+  color: rgba(230, 236, 245, 0.84);
+  line-height: 1.9;
+  font-size: 1rem;
+}
+
+/* Tags */
+#experience .xp-tag-list {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  margin-top: 24px !important;
+}
+
+#experience .xp-tag-list span {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid rgba(132, 223, 240, 0.35);
+  background: rgba(132, 223, 240, 0.07);
+  color: var(--teal-soft, #84dff0);
+  border-radius: 999px;
+  font-family: var(--mono, monospace);
+  font-size: 0.76rem;
+}
+
+/* Metric cards */
+#experience .xp-metric-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 18px !important;
+}
+
+#experience .xp-metric-card {
+  padding: 24px !important;
+  min-height: 168px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background:
+    linear-gradient(160deg, rgba(255,255,255,0.06), rgba(255,255,255,0.025));
+  border-radius: 20px;
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+#experience .xp-metric-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(132, 223, 240, 0.45);
+  background:
+    linear-gradient(160deg, rgba(132,223,240,0.11), rgba(255,255,255,0.03));
+}
+
+#experience .xp-metric-number {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--teal-soft, #84dff0);
+  font-family: var(--mono, monospace);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+#experience .xp-metric-title {
+  margin-bottom: 8px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+#experience .xp-metric-card p {
+  margin: 0;
+  color: rgba(230, 236, 245, 0.72);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* Proof cards */
+#experience .xp-proof-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 18px !important;
+  margin: 34px 0 !important;
+}
+
+#experience .xp-proof-card {
+  position: relative;
+  padding: 26px !important;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: #171b23;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#experience .xp-proof-card::after {
+  content: "";
+  position: absolute;
+  right: -38px;
+  top: -38px;
+  width: 92px;
+  height: 92px;
+  border: 1px solid rgba(132, 223, 240, 0.18);
+  border-radius: 50%;
+}
+
+#experience .xp-proof-step {
+  display: inline-flex;
+  margin-bottom: 16px;
+  color: var(--teal-soft, #84dff0);
+  font-family: var(--mono, monospace);
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+#experience .xp-proof-card h4 {
+  margin: 0 0 12px;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+#experience .xp-proof-card p {
+  margin: 0;
+  color: rgba(230, 236, 245, 0.76);
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+
+/* Process flow */
+#experience .xp-process {
+  margin: 42px 0 24px !important;
+  padding: 34px !important;
+  border: 1px solid rgba(132, 223, 240, 0.24);
+  background:
+    radial-gradient(circle at top left, rgba(132,223,240,0.08), transparent 32%),
+    #11161f;
+  border-radius: 24px;
+}
+
+#experience .xp-process-head {
+  margin-bottom: 28px;
+}
+
+#experience .xp-process-head h3 {
+  margin: 8px 0 0;
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+}
+
+#experience .xp-process-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 18px !important;
+}
+
+#experience .xp-process-item {
+  position: relative;
+  padding: 24px !important;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  background: rgba(255,255,255,0.035);
+  border-radius: 18px;
+}
+
+#experience .xp-process-num {
+  width: 38px;
+  height: 38px;
+  margin-bottom: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--teal-soft, #84dff0);
+  color: #0f141b;
+  border-radius: 50%;
+  font-family: var(--mono, monospace);
+  font-weight: 700;
+}
+
+#experience .xp-process-item h4 {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+}
+
+#experience .xp-process-item p {
+  margin: 0;
+  color: rgba(230, 236, 245, 0.76);
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+
+/* Honest note */
+#experience .xp-note {
+  margin: 24px 0 48px !important;
+  padding: 20px 24px !important;
+  border-left: 4px solid var(--teal-soft, #84dff0);
+  background: rgba(132, 223, 240, 0.07);
+  border-radius: 0 16px 16px 0;
+}
+
+#experience .xp-note p {
+  margin: 0;
+  color: rgba(230, 236, 245, 0.82);
+  line-height: 1.8;
+}
+
+/* Other experience */
+#experience .xp-other {
+  margin-top: 56px !important;
+}
+
+#experience .xp-other-head {
+  margin-bottom: 26px;
+}
+
+#experience .xp-other-head h3 {
+  margin: 8px 0 0;
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+}
+
+#experience .xp-other-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 20px !important;
+}
+
+#experience .xp-other-card {
+  display: grid !important;
+  grid-template-columns: 120px 1fr !important;
+  gap: 24px !important;
+  padding: 26px !important;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: #171b23;
+  border-radius: 20px;
+}
+
+#experience .xp-other-year {
+  color: var(--teal-soft, #84dff0);
+  font-family: var(--mono, monospace);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+#experience .xp-other-body h4 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+}
+
+#experience .xp-other-org {
+  margin: 0 0 12px;
+  color: rgba(230, 236, 245, 0.62);
+}
+
+#experience .xp-other-body p {
+  margin: 0;
+  color: rgba(230, 236, 245, 0.78);
+  line-height: 1.75;
+}
+
+/* Responsive */
+@media (max-width: 1050px) {
+  #experience .xp-showcase {
+    grid-template-columns: 1fr !important;
+  }
+
+  #experience .xp-proof-grid,
+  #experience .xp-process-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  #experience .xp-other-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 760px) {
+  #experience .resume-strip {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #experience .xp-metric-grid,
+  #experience .xp-proof-grid,
+  #experience .xp-process-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  #experience .xp-other-card {
+    grid-template-columns: 1fr !important;
+  }
+
+  #experience .xp-feature-card,
+  #experience .xp-process,
+  #experience .xp-proof-card,
+  #experience .xp-metric-card,
+  #experience .xp-other-card {
+    padding: 22px !important;
+  }
+}
