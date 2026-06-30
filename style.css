@@ -1361,3 +1361,274 @@ form.contact-form {
     grid-template-columns: 1fr;
   }
 }
+/* ===================== EXPERIENCE REDESIGN ===================== */
+
+.section-intro {
+  max-width: 760px;
+  margin-top: 14px;
+  opacity: 0.82;
+  line-height: 1.8;
+}
+
+.xp-showcase {
+  display: grid;
+  grid-template-columns: 1.25fr 0.95fr;
+  gap: 28px;
+  margin-top: 40px;
+  align-items: start;
+}
+
+.xp-feature-card {
+  background: #1c2028;
+  border: 1px solid #3f4652;
+  padding: 34px;
+  border-radius: 16px;
+}
+
+.xp-label {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #7cd6e7;
+}
+
+.xp-feature-card h3 {
+  margin-bottom: 10px;
+}
+
+.xp-org {
+  margin-bottom: 18px;
+  opacity: 0.72;
+}
+
+.xp-feature-card p {
+  line-height: 1.9;
+}
+
+.xp-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.xp-tag-list span {
+  border: 1px solid #4d5562;
+  background: #141821;
+  color: #90dcea;
+  font-size: 12px;
+  padding: 8px 12px;
+  border-radius: 999px;
+}
+
+.xp-metric-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.xp-metric-card {
+  background: #1c2028;
+  border: 1px solid #3f4652;
+  border-radius: 16px;
+  padding: 24px;
+  min-height: 165px;
+}
+
+.xp-metric-number {
+  font-size: 42px;
+  line-height: 1;
+  margin-bottom: 12px;
+  color: #84dff0;
+  font-family: "Fraunces", serif;
+}
+
+.xp-metric-title {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.xp-metric-card p {
+  opacity: 0.82;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.xp-proof-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 26px;
+}
+
+.xp-proof-card {
+  background: #161a22;
+  border: 1px solid #323844;
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.xp-proof-step {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #84dff0;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.xp-proof-card h4 {
+  margin-bottom: 10px;
+}
+
+.xp-proof-card p {
+  line-height: 1.85;
+  opacity: 0.84;
+  font-size: 15px;
+}
+
+.xp-process {
+  margin-top: 34px;
+  padding: 34px;
+  background: #11151d;
+  border: 1px solid #2b313c;
+  border-radius: 18px;
+}
+
+.xp-process-head h3 {
+  margin-top: 8px;
+}
+
+.xp-process-grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.xp-process-item {
+  background: #1a1f28;
+  border: 1px solid #313846;
+  border-radius: 14px;
+  padding: 22px;
+}
+
+.xp-process-num {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #84dff0;
+  color: #0d1117;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.xp-process-item h4 {
+  margin-bottom: 10px;
+}
+
+.xp-process-item p {
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0.82;
+}
+
+.xp-note {
+  margin-top: 20px;
+  padding: 18px 22px;
+  border-left: 3px solid #84dff0;
+  background: rgba(132, 223, 240, 0.06);
+  border-radius: 8px;
+}
+
+.xp-note p {
+  margin: 0;
+  line-height: 1.85;
+  opacity: 0.88;
+}
+
+.xp-other {
+  margin-top: 42px;
+}
+
+.xp-other-head h3 {
+  margin-top: 8px;
+  margin-bottom: 22px;
+}
+
+.xp-other-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.xp-other-card {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 26px;
+  padding: 24px 0;
+  border-top: 1px solid #313846;
+}
+
+.xp-other-card:last-child {
+  border-bottom: 1px solid #313846;
+}
+
+.xp-other-year {
+  color: #84dff0;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+}
+
+.xp-other-body h4 {
+  margin-bottom: 8px;
+}
+
+.xp-other-org {
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+.xp-other-body p:last-child {
+  line-height: 1.85;
+  opacity: 0.86;
+}
+
+@media (max-width: 1000px) {
+  .xp-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .xp-process-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .xp-metric-grid,
+  .xp-proof-grid,
+  .xp-process-grid,
+  .xp-other-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .xp-other-card {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .xp-feature-card,
+  .xp-process,
+  .xp-metric-card,
+  .xp-proof-card {
+    padding: 22px;
+  }
+
+  .xp-metric-number {
+    font-size: 34px;
+  }
+}
