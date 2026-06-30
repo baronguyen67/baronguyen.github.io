@@ -2022,3 +2022,196 @@ form.contact-form {
     padding: 22px !important;
   }
 }
+/* =========================================================
+   ABOUT SECTION - CREATIVE BALANCED REDESIGN
+   Paste this block at the very bottom of style.css
+========================================================= */
+
+#about {
+  position: relative;
+}
+
+#about .section-head {
+  max-width: 920px;
+  margin-bottom: 24px;
+}
+
+#about .section-intro {
+  max-width: 720px;
+  margin-top: 14px;
+  color: rgba(230, 236, 245, 0.78);
+  line-height: 1.8;
+}
+
+#about .about-showcase {
+  display: grid !important;
+  grid-template-columns: 1.08fr 0.92fr !important;
+  gap: 34px !important;
+  align-items: start !important;
+  margin-top: 32px !important;
+}
+
+#about .about-copy {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 18px !important;
+}
+
+#about .about-copy-card {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.02));
+  border-radius: 20px;
+  padding: 28px 28px 24px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.18);
+}
+
+#about .about-copy-card.soft {
+  background: linear-gradient(180deg, rgba(102, 212, 255, 0.07), rgba(255,255,255,0.02));
+  border-color: rgba(102, 212, 255, 0.18);
+}
+
+#about .about-copy-card p {
+  margin: 0 0 16px;
+  line-height: 1.9;
+  color: rgba(234, 238, 244, 0.92);
+}
+
+#about .about-copy-card p:last-child {
+  margin-bottom: 0;
+}
+
+#about .about-copy-card h3 {
+  margin: 0 0 14px;
+  font-size: 1.02rem;
+}
+
+#about .about-value-list {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 10px;
+}
+
+#about .about-value-list li {
+  color: rgba(234, 238, 244, 0.88);
+  line-height: 1.7;
+}
+
+#about .about-quote {
+  margin: 0;
+  padding: 18px 22px;
+  border-left: 3px solid var(--accent);
+  background: rgba(255, 255, 255, 0.025);
+  border-radius: 0 16px 16px 0;
+  font-style: italic;
+  line-height: 1.8;
+  color: rgba(245, 228, 213, 0.95);
+}
+
+#about .about-dashboard {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 18px !important;
+  align-content: start !important;
+}
+
+#about .about-stat {
+  min-height: 170px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.018));
+  border-radius: 18px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about .about-stat:hover {
+  transform: translateY(-4px);
+  border-color: rgba(102, 212, 255, 0.26);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+#about .about-stat-hero {
+  grid-column: 1 / -1;
+  min-height: 190px;
+  background:
+    radial-gradient(circle at top right, rgba(102, 212, 255, 0.14), transparent 36%),
+    linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+  border-color: rgba(102, 212, 255, 0.2);
+}
+
+#about .about-stat-kicker {
+  font-size: 0.74rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+#about .about-stat-hero h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+#about .about-stat-hero p {
+  margin: 0;
+  line-height: 1.8;
+  color: rgba(230, 236, 245, 0.82);
+}
+
+#about .about-stat .num {
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+#about .about-stat .label {
+  line-height: 1.75;
+  color: rgba(230, 236, 245, 0.82);
+  font-size: 0.96rem;
+}
+
+@media (max-width: 1100px) {
+  #about .about-showcase {
+    grid-template-columns: 1fr !important;
+  }
+
+  #about .about-dashboard {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+@media (max-width: 760px) {
+  #about .section-head {
+    margin-bottom: 18px;
+  }
+
+  #about .about-showcase {
+    gap: 22px !important;
+    margin-top: 24px !important;
+  }
+
+  #about .about-copy-card,
+  #about .about-quote,
+  #about .about-stat {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  #about .about-dashboard {
+    grid-template-columns: 1fr !important;
+  }
+
+  #about .about-stat {
+    min-height: auto;
+  }
+
+  #about .about-stat-hero {
+    min-height: auto;
+  }
+}
