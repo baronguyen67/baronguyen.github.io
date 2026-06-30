@@ -1130,3 +1130,37 @@ form.contact-form {
   opacity: 1;
   transform: translateY(0);
 }
+.experience-feature {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 32px;
+  margin: 48px 0;
+  align-items: start;
+}
+
+.experience-main{
+  border-width:1px;
+  border-style:solid;
+  border-color:#3f4652;
+  background:#1c2028;
+  padding:34px;
+}
+.experience-main h3 {
+  margin: 10px 0 8px;
+}
+
+.experience-main .org {
+  margin-bottom: 18px;
+  opacity: 0.72;
+}
+
+.experience-metrics {
+  display: grid;
+  gap: 18px;
+}
+
+@media (max-width: 800px) {
+  .experience-feature {
+    grid-template-columns: 1fr;
+  }
+}
